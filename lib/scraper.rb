@@ -26,7 +26,10 @@ end
 
 Scraper.new.get_page 
 
+collection_course_offerings = doc.css(".post") 
+
  course_title = doc.css(".post").first.css("h2").text 
  schedule = doc.css(".post").first.css(".date").text 
+ description = doc.css(".post").first.css("p").text 
 
 
