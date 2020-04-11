@@ -8,6 +8,7 @@ class Scraper
   
   def get_page 
     doc = Nokogiri::HTML(open())
+  end 
   
   def print_courses
     self.make_courses
