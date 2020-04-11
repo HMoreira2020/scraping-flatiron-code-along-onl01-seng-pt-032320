@@ -26,7 +26,7 @@ end
 
 Scraper.new.get_page 
 
- course_title = doc.css(".post").first.css("h2")
- schedule = 
+ course_title = doc.css(".post").first.css("h2").text 
+ schedule = doc.css(".post").first.css(".date").text 
 
 
